@@ -1,0 +1,49 @@
+<! -- Write a JavaScript program to get the current date.
+     Expected Output :
+mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy. -->
+
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+  <title>Current Date </title>
+<body>
+
+
+<p>Current date is <span id="date1"></span> <br>
+                   <span id="date2"></span><br>
+                   <span id="date3"></span><br>
+                   <span id="date4"></span></p>
+
+
+
+<script>
+  var today = new Date();
+  var dd = today.getDate();
+
+  var mm = today.getMonth()+1; //January is 0!
+  var yyyy = today.getFullYear();
+
+   if (dd < 10) {
+       dd = "0" + dd;
+       }
+
+   if (mm < 10) {
+   	   mm = "0" + mm;
+   }
+
+  current_date = mm + "-" + dd + "-" + yyyy;
+  document.getElementById("date1").innerHTML = current_date;
+
+  current_date1 = mm + "/" + dd + "/" + yyyy;
+  document.getElementById("date2").innerHTML = current_date1;
+
+  current_date2 = dd + "-" + mm + "-" + yyyy;
+  document.getElementById("date3").innerHTML = current_date2;
+
+  current_date3 = dd + "/" + mm + "/" + yyyy;
+  document.getElementById("date4").innerHTML = current_date3;
+
+</script>
+
+</body>
+</html>

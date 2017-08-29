@@ -1,0 +1,26 @@
+<! -- Write a javascript program to find the area of a triangle where lengths of the three of its sides are 5,6,7 -->
+
+
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+  <title>Area of Triangle </title>
+<body>
+
+ <p>Area of a Triangle :<span id="area_triangle"></span></p>
+
+<script>
+
+  var a = 5;
+  var b = 6;
+  var c = 7;
+
+var perimeter = (a + b +c)/2;
+
+var area = Math.sqrt((perimeter-a)*(perimeter-b)*(perimeter-c))
+
+document.getElementById("area_triangle").innerHTML = area;
+
+</script>
+</body>
+</html>
