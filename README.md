@@ -1,2 +1,2 @@
 
-# javascript_exercises
+## Simple exercises to practice my skills on Javascript 
